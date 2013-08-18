@@ -89,9 +89,8 @@ body {
 /* //-- footer -- */
 
 #ft {
-  padding: 1em 0 5em 0;
+  padding: 0 0 5em 0;
   font-size: 92%;
-  border-top: 1px solid #ccc;
   text-align: center;
 }
 
