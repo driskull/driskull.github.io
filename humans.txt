@@ -1,0 +1,7 @@
+/* TEAM */
+	
+	Matt Driscoll
+	CSS and PHP Ninja
+	Twitter: @driskull
+	Contact: matthew.driscoll@gmail.com
+	From: CA, USA

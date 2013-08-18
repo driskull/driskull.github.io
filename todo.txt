@@ -1,0 +1,18 @@
+Last.fm chart
+http://www.last.fm/api/show/user.getRecentTracks
+http://www.last.fm/api/show/user.getTopArtists
+http://www.last.fm/api/show/user.getWeeklyChartList
+http://www.last.fm/api/show/user.getWeeklyArtistChart
+
+
+Resume doc convert to MD
+
+
+gallery
+
+
+http://www.linkedin.com/in/driscollm
+
+
+<a class="twitter-timeline" href="https://twitter.com/driskull" data-widget-id="369005333609345024">Tweets by @driskull</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
