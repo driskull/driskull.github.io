@@ -5,6 +5,14 @@
 
 /* =! Template */
 
+#mapDiv{
+    display:none;
+}
+
+#tweets{
+    display:none;
+}
+
 #doc2 {
     width: 100%;
 }

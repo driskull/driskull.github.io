@@ -45,16 +45,11 @@ function(
             this.config = config;
 
             ready(lang.hitch(this, function () {
-                //this._createWebMap();
-
-
                 this._init();
-
-
             }));
         },
         _getUser: function () {
-            var url = 'https://api.github.com/users/' + this.config.username;
+            var url = 'https://api.github.com/users/' + this.config.github.username;
             esriRequest({
                 url: url,
                 content: {},
@@ -84,7 +79,7 @@ function(
                 }
 
 
-                var name = this.config.username;
+                var name = this.config.github.username;
                 if (data.name) {
                     name = data.name;
                 }
@@ -110,7 +105,7 @@ function(
                     reposLabel: data.public_repos > 1 ? 'repositories' : 'repository',
                     followers: data.followers,
                     followersLabel: data.followers > 1 ? 'followers' : 'follower',
-                    username: this.config.username,
+                    username: this.config.github.username,
                     userStatus: 'GitHub user',
                     since: since,
                     resume_url: window.location
@@ -141,13 +136,17 @@ function(
                     window.print();
                     return false;
                 }));
-
+    
+    
+                this._createWebMap();
 
                 this._pageRepos();
                 
                 
                 this._pageOrgs();
-
+                
+                
+                
 
             }), lang.hitch(this, function (error) {
                 console.log(error);
@@ -219,7 +218,7 @@ function(
             }));
         },
         _github_user_orgs: function() {
-            var url = 'https://api.github.com/users/' + this.config.username + '/orgs';
+            var url = 'https://api.github.com/users/' + this.config.github.username + '/orgs';
             return esriRequest({
                 url: url,
                 handleAs: 'json',
@@ -228,9 +227,6 @@ function(
         },
         _gotRepos: function (data) {
 
-            
-            console.log(data);
-            
             var sorted = [],
                 languages = {},
                 popularity;
@@ -357,7 +353,7 @@ function(
                         date: date,
                         language: repo.info.language,
                         description: repo.info.description,
-                        username: this.config.username,
+                        username: this.config.github.username,
                         watchers: repo.info.watchers,
                         forks: repo.info.forks,
                         watchersLabel: repo.info.watchers === 0 || repo.info.watchers > 1 ? 'watchers' : 'watcher',
@@ -384,7 +380,7 @@ function(
         },
         _github_user_repos: function (page_number) {
             var page = (page_number ? page_number : 1);
-            var url = 'https://api.github.com/users/' + this.config.username + '/repos';
+            var url = 'https://api.github.com/users/' + this.config.github.username + '/repos';
             return esriRequest({
                 url: url,
                 content: {
@@ -432,11 +428,50 @@ function(
                 return 'Passionate GitHub user';
             }
         },
+        _initTwitter: function(){
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        },
         _init: function () {
             this._getUser();
+            this._initTwitter();
+        },
+        _getRecentTracks: function(){ 
+            var url = 'http://ws.audioscrobbler.com/2.0/';
+            esriRequest({
+                url: url,
+                content: {
+                    method: 'user.getrecenttracks',
+                    user: this.config.lastfm.user,
+                    api_key: this.config.lastfm.api_key,
+                    format: 'json'          
+                },
+                handleAs: 'json',
+                callbackParamName: 'callback',
+            }).then(lang.hitch(this, function(data){
+                console.log(data);
+            }));
+        },
+        _getTopArtists: function(){ 
+            var url = 'http://ws.audioscrobbler.com/2.0/';
+            esriRequest({
+                url: url,
+                content: {
+                    method: 'user.getTopArtists',
+                    user: this.config.lastfm.user,
+                    api_key: this.config.lastfm.api_key,
+                    format: 'json'          
+                },
+                handleAs: 'json',
+                callbackParamName: 'callback',
+            }).then(lang.hitch(this, function(data){
+                console.log(data);
+            }));
         },
         _mapLoaded: function () {
-
+            //this._getRecentTracks();
+            //this._getTopArtists();
+            
+            
         },
         //create a map based on the input web map id
         _createWebMap: function () {
