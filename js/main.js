@@ -427,41 +427,7 @@ function(
         _init: function () {
             this._getUser().then(this._initTwitter);
         },
-        _getRecentTracks: function(){ 
-            var url = 'http://ws.audioscrobbler.com/2.0/';
-            esriRequest({
-                url: url,
-                content: {
-                    method: 'user.getrecenttracks',
-                    user: this.config.lastfm.user,
-                    api_key: this.config.lastfm.api_key,
-                    format: 'json'          
-                },
-                handleAs: 'json',
-                callbackParamName: 'callback',
-            }).then(lang.hitch(this, function(data){
-                console.log(data);
-            }));
-        },
-        _getTopArtists: function(){ 
-            var url = 'http://ws.audioscrobbler.com/2.0/';
-            esriRequest({
-                url: url,
-                content: {
-                    method: 'user.getTopArtists',
-                    user: this.config.lastfm.user,
-                    api_key: this.config.lastfm.api_key,
-                    format: 'json'          
-                },
-                handleAs: 'json',
-                callbackParamName: 'callback',
-            }).then(lang.hitch(this, function(data){
-                console.log(data);
-            }));
-        },
         _mapLoaded: function () {
-            //this._getRecentTracks();
-            //this._getTopArtists();
         },
         //create a map based on the input web map id
         _createWebMap: function () {

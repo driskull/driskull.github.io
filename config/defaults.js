@@ -17,10 +17,6 @@ define([], function() {
         "github":{
             "username": "driskull",
         },
-        "lastfm": {
-            "user": "retaks",
-            "api_key": "05318fce9b3e7cf3e9148de38257ba41"
-        },
         "bingmapskey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
         "sharinghost": location.protocol + "//" + "www.arcgis.com" //Defaults to arcgis.com. Set this value to your portal or organization host name. 
     };

@@ -1,4 +1,4 @@
-# Matt Driscoll - Front End Web Developer
+# Matt Driscoll
 - 93 Kansas St #707
 - Redlands, CA 92373
 - (951) 442-1035
@@ -7,7 +7,7 @@
 - [github.com/driskull](https://github.com/driskull)
 
 ## Objective
-Obtain a challenging and rewarding web development position where I can use my keen eye for design and front-end development skills to create innovative web interfaces focused on user experience and write efficient object-oriented JavaScript code using best practices.
+Obtain a challenging and rewarding front-end web development position where I can  create innovative web interfaces focused on user experience and write efficient object-oriented JavaScript code using best practices.
 
 
 ## Technical Skills
