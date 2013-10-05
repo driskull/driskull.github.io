@@ -1,10 +1,10 @@
 # Matt Driscoll - Front End Web Developer
-->93 Kansas St #707<-
-->Redlands, CA 92373<-
-->(951) 442-1035<-
-->[matthew.driscoll@gmail.com](mailto:matthew.driscoll@gmail.com)<-
-->[@driskull](https://twitter.com/driskull)<-
-->[github.com/driskull](https://github.com/driskull)<-
+- 93 Kansas St #707
+- Redlands, CA 92373
+- (951) 442-1035
+- [matthew.driscoll@gmail.com](mailto:matthew.driscoll@gmail.com)
+- [@driskull](https://twitter.com/driskull)
+- [github.com/driskull](https://github.com/driskull)
 
 ## Objective
 Obtain a challenging and rewarding web development position where I can use my keen eye for design and front-end development skills to create innovative web interfaces focused on user experience and write efficient object-oriented JavaScript code using best practices.
@@ -26,7 +26,7 @@ Obtain a challenging and rewarding web development position where I can use my k
 ## Work Experience
 *   **Web Application Developer (April 2009-Present)**
 
-	Environmental Systems Research Institute (Esri)
+	Environmental Systems Research Institute (Esri).
 	Redlands, CA
 
     -   Worked in the Technical Marketing department as a front-end web developer creating innovative mapping applications and demos to market Esri’s software and show off the ArcGIS API for JavaScript.
@@ -42,7 +42,7 @@ Obtain a challenging and rewarding web development position where I can use my k
 
 *   **Student Web Developer (2005-2008)**
 
-	Department of Recreational Sports
+	Department of Recreational Sports.
 	California State University, San Bernardino, CA
 
     -   Developed, designed, launched and maintained a dynamic, custom developed CMS website using CSS, XHTML, MYSQL and the Codeigniter PHP framework.
@@ -52,10 +52,12 @@ Obtain a challenging and rewarding web development position where I can use my k
     -   Solved technical hardware and software computer related problems.
 
 ## Education
-*   **California State University, San Bernardino (January 2005- December 2008)**
-	B.S. Computer Science
-*   Temescal Canyon High School (1998-2002)
-	Diploma
+*   **California State University, San Bernardino**
+	-	(January 2005-December 2008)
+	-	B.S. Computer Science
+*   **Temescal Canyon High School**
+	-	(1998-2002)
+	-	Diploma
 
 ## References
 Available upon request.
