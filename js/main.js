@@ -6,18 +6,19 @@ define([
     "esri/IdentityManager",
     "esri/request",
     "modules/mustache",
-    "dojo/text!./views/error.html",
-    "dojo/text!./views/job.html",
-    "dojo/text!./views/org.html",
-    "dojo/text!./views/repo.html",
-    "dojo/text!./views/resume.html",
-    "dojo/text!./views/user.html",
+    "dojo/text!views/error.html",
+    "dojo/text!views/job.html",
+    "dojo/text!views/org.html",
+    "dojo/text!views/repo.html",
+    "dojo/text!views/resume.html",
+    "dojo/text!views/user.html",
     "dojo/on",
     "dojo/dom",
     "dojo/_base/array",
     "dojo/dom-construct",
     "dojo/dom-class",
-    "dojo/dom-style"
+    "dojo/dom-style",
+    "dojo/request/script"
 ],
 function(
     ready, 
@@ -33,7 +34,8 @@ function(
     array,
     domConstruct,
     domClass,
-    domStyle
+    domStyle,
+    script
 ) {
     return declare("", null, {
         config: {},
@@ -50,7 +52,7 @@ function(
         },
         _getUser: function () {
             var url = 'https://api.github.com/users/' + this.config.github.username;
-            esriRequest({
+            return esriRequest({
                 url: url,
                 content: {},
                 handleAs: 'json',
@@ -136,18 +138,9 @@ function(
                     window.print();
                     return false;
                 }));
-    
-    
-                this._createWebMap();
-
-                this._pageRepos();
-                
-                
+                this._pageRepos();                
                 this._pageOrgs();
-                
-                
-                
-
+                //this._createWebMap();
             }), lang.hitch(this, function (error) {
                 console.log(error);
             }));
@@ -230,9 +223,8 @@ function(
             var sorted = [],
                 languages = {},
                 popularity;
-
-
-
+                
+                
             array.forEach(data, lang.hitch(this, function (repo, i) {
                 if (repo.fork !== false) {
                     return;
@@ -352,6 +344,7 @@ function(
                         name: repo.info.name,
                         date: date,
                         language: repo.info.language,
+                        homepage: repo.info.homepage,
                         description: repo.info.description,
                         username: this.config.github.username,
                         watchers: repo.info.watchers,
@@ -429,11 +422,10 @@ function(
             }
         },
         _initTwitter: function(){
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            script.get(location.protocol + '//platform.twitter.com/widgets.js');
         },
         _init: function () {
-            this._getUser();
-            this._initTwitter();
+            this._getUser().then(this._initTwitter);
         },
         _getRecentTracks: function(){ 
             var url = 'http://ws.audioscrobbler.com/2.0/';
@@ -470,8 +462,6 @@ function(
         _mapLoaded: function () {
             //this._getRecentTracks();
             //this._getTopArtists();
-            
-            
         },
         //create a map based on the input web map id
         _createWebMap: function () {

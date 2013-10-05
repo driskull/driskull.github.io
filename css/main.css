@@ -4,13 +4,10 @@ html,body,{
 }
 
 #mapDiv{
+    display:none;
     height:400px;
     width:100%;
     margin-bottom:3em;
     padding-bottom: 1.5em;
     border-bottom: 1px solid #ccc;
-}
-
-.esriRtl label{
-    /*Example of a rule that will be applied if the app is viewed in a browser wtih a RTL locale like Hebrew or Arabic.*/
 }

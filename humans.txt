@@ -1,7 +1,7 @@
-/* TEAM */
+/* Army of me*/
 	
 	Matt Driscoll
-	CSS and PHP Ninja
+	CSS, PHP and JavaScript Ninja
 	Twitter: @driskull
 	Contact: matthew.driscoll@gmail.com
 	From: CA, USA
