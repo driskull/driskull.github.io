@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 50px 0 0 0;
+      height: 600px;
+      width: 100%;
+      position: relative;
+    }
+
+    .flood-map__form {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      width: 40%;
+      margin-left: -20%;
+    }
+
+    .flood-map__search {
+      padding: 10px;
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      border: none;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <script src="flood-map/dojoConfig.js"></script>
+  <script src="https://js.arcgis.com/4.8/"></script>
+  <script src="flood-map/main.js"></script>
+
+</head>
+
+<body>
+
+  <div id="viewDiv">
+    <form class="flood-map__form" id="map-search-form">
+      <input type="search" class="flood-map__search" id="map-search" value="" placeholder="Enter address&hellip;" />
+    </form>
+  </div>
+  <div id="map-results"></div>
+</body>
+
+</html>
