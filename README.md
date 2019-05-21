@@ -26,9 +26,10 @@ I'm a senior front-end software engineer with a passion for creating innovative 
 
 ### Software Engineer (May 2015 – Present)
 
-**JavaScript API Team**<br />
 [Environmental Systems Research Institute (Esri)](https://www.esri.com)<br />
-Redlands, CA
+JavaScript API Team<br />
+Redlands, CA<br />
+Salary/Hourly: $110,000/$50.00
 
 - ArcGIS JavaScript API developer with a focus on the APIs mapping widgets.
 - Influence and create new designs, architectures, standards and methods for API classes and widgets.
@@ -43,15 +44,17 @@ Redlands, CA
 
 #### [Bent Ear Solutions](https://www.bentearsolutions.com/) (Aug 2018 - Dec 2018)
 
-- Engineered a [flood assessment web mapping application](https://heartlandfloodhelp.org/map/?search=73106,%20Oklahoma%20City,%20OK,%20USA) using the ArcGIS JS API in which a user can input a location and the application will query service data to calcuate the flooding risk assessment for the location.
+Hourly: \$100.00
+
+- Engineered a [flood assessment web mapping application](https://heartlandfloodhelp.org/map/?search=73106,%20Oklahoma%20City,%20OK,%20USA) using the ArcGIS JS API in which a user can input a location and the application will query service data to calcuate the flooding risk assessment for the location. ([pdf](./pdf/flooding-map.pdf))
 - Worked alongside [Reingold](https://www.reingold.com/) to document requirements, implement designs, deliver production code, and provide support for the application.
 - Authored a web map using FEMA Flooding data.
 - Participated in weekly meetings to ensure client deliverables were on schedule.
 
 ### Web Application Developer (Apr 2012 – Apr 2015)
 
-**Technical Marketing Team**<br />
 [Environmental Systems Research Institute (Esri)](https://www.esri.com)<br />
+Technical Marketing Team<br />
 Redlands, CA
 
 - Worked in the Technical Marketing department as a front-end web developer creating innovative mapping applications and demos to market Esri software and show off the ArcGIS API for JavaScript.
@@ -65,8 +68,8 @@ Redlands, CA
 
 ### Web Specialist (Apr 2009 – Mar 2012)
 
-**Marketing Web Operations Team**<br />
 [Environmental Systems Research Institute (Esri)](https://www.esri.com)<br />
+Marketing Web Operations Team<br />
 Redlands, CA
 
 - Served as the lead PHP developer and architect in launching a secured, dynamic streaming video website and CMS using PHP/MYSQL, Codeigniter, CSS3, AJAX, jQuery and HTML5. (video.esri.com)
@@ -78,8 +81,9 @@ Redlands, CA
 
 ### Student Web Developer (Jan 2005 – Dec 2008)
 
-**[Department of Recreational Sports](https://www.csusb.edu/recreation-wellness)**<br />
-California State University, San Bernardino, CA
+[California State University, San Bernardino](https://www.csusb.edu)<br />
+Department of Recreational Sports<br />
+San Bernardino, CA
 
 - Developed, designed, launched, and maintained a dynamic, custom developed CMS website using CSS, XHTML, MYSQL and the Codeigniter PHP framework.
 - Ensured website was 100% accessible to users with disabilities and complied with campus policies. (Section 508)
