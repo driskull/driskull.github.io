@@ -46,7 +46,7 @@ Salary/Hourly: $110,000/$50.00
 
 Hourly: \$100.00
 
-- Engineered a [flood assessment web mapping application](https://heartlandfloodhelp.org/map/?search=73106,%20Oklahoma%20City,%20OK,%20USA) using the ArcGIS JS API in which a user can input a location and the application will query service data to calcuate the flooding risk assessment for the location. ([pdf](./pdf/flooding-map.pdf))
+- Engineered a [flood assessment web mapping application](https://heartlandfloodhelp.org/map/?search=1600-1698%20W%20Reno%20Ave,%20Oklahoma%20City,%20OK,%2073106,%20USA&) using the ArcGIS JS API in which a user can input a location and the application will query service data to calcuate the flooding risk assessment for the location. ([pdf](./pdf/flooding-map.pdf))
 - Worked alongside [Reingold](https://www.reingold.com/) to document requirements, implement designs, deliver production code, and provide support for the application.
 - Authored a web map using FEMA Flooding data.
 - Participated in weekly meetings to ensure client deliverables were on schedule.
