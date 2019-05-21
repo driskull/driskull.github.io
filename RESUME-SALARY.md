@@ -30,6 +30,8 @@ I'm a senior front-end software engineer with a passion for creating innovative 
 [Environmental Systems Research Institute (Esri)](https://www.esri.com)<br />
 Redlands, CA
 
+Salary/Hourly: $110,000/$50.00
+
 - ArcGIS JavaScript API developer with a focus on the APIs mapping widgets.
 - Influence and create new designs, architectures, standards and methods for API classes and widgets.
 - Developed and designed widgets in the API using TypeScript, Sass, JSX, BEM.
@@ -42,6 +44,8 @@ Redlands, CA
 ### Software Engineering & Consulting
 
 #### [Bent Ear Solutions](https://www.bentearsolutions.com/) (Aug 2018 - Dec 2018)
+
+Hourly: \$100.00
 
 - Engineered a [flood assessment web mapping application](https://heartlandfloodhelp.org/map/?search=73106,%20Oklahoma%20City,%20OK,%20USA) using the ArcGIS JS API in which a user can input a location and the application will query service data to calcuate the flooding risk assessment for the location.
 - Worked alongside [Reingold](https://www.reingold.com/) to document requirements, implement designs, deliver production code, and provide support for the application.
