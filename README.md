@@ -1,5 +1,3 @@
-# MATT DRISCOLL
-
 ## CONTACT
 
 - (951) 442-1035
