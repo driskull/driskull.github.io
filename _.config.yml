@@ -4,4 +4,4 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - RESUME.md
+  - index.md
