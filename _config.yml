@@ -1,7 +1,8 @@
+title: Matt Driscoll
+description: As a Software Engineer on the ArcGIS JavaScript API Team, I focus on building mapping widgets that provide a great user experience, are well designed and accessible to all users.
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
-title: Matt Driscoll

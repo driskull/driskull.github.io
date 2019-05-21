@@ -2,8 +2,9 @@
 
 - (951) 442-1035
 - [matthew.driscoll@gmail.com](mailto:matthew.driscoll@gmail.com)
-- [@driskull](https://twitter.com/driskull)
+- [twitter.com/driskull](https://twitter.com/driskull)
 - [github.com/driskull](https://github.com/driskull)
+- [linkedin.com/in/driscollm/](https://www.linkedin.com/in/driscollm/)
 
 ## PROFILE
 
