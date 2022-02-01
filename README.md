@@ -1,6 +1,5 @@
 ## CONTACT
 
-- [mobile: (951) 442-1035](tel:1-951-4421-035)
 - [matthew.driscoll@gmail.com](mailto:matthew.driscoll@gmail.com)
 - [twitter.com/driskull](https://twitter.com/driskull)
 - [github.com/driskull](https://github.com/driskull)
